@@ -7,7 +7,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
+  var result = [];
+  
+  var sum = a + b;
 
+  result[0] = a + b;
+  result[1] = ""
 }
 
 // Here is the test for sum(); uncomment it to run it
