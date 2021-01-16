@@ -13,11 +13,11 @@ function sum(a, b) { //eslint-disable-line
 
   result[0] = sum;
   result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
-  return result;
+  return sum;
 }
 
 // // Here is the test for sum(); uncomment it to run it
-testSum(4, 7);
+// testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -37,7 +37,7 @@ function multiply(a, b) { //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -74,15 +74,36 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+
+function sum(a, b) { //eslint-disable-line
+  var result = [];
+
+  var sum = a + b;
+  console.log(sum)
+  result[0] = sum;
+  result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
+  return sum;
+}
+
+
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  var solutionOneArray = [];
+  var arraySum = 0;
+  for (var i = 0; i < sumArr.length; i++){
+  arraySum = sum(sumArr[i], arraySum);
+  }
+  solutionOneArray [0] = arraySum;
+  console.log(sumArr[0], sumArr[1], sumArr[2])
+  solutionOneArray [1] = sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.';
 
+  return solutionOneArray;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
