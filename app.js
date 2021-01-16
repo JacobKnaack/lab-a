@@ -28,6 +28,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 "The product of 5 and 9 is 45."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
+
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
   var result2 = [];
@@ -50,22 +51,10 @@ Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
-
+// banana
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var result3 = [];
-  var add = sum (a,b);
-  var sum1 = sum(add[0], c);
-  var times = multiply(a,b);
-  var sum2 = multiply(times[0], c); {
-  result3[0] = sum1;
-  result3[2] = (`${a} and ${b} and ${c} sum to ${sum1}.`);
-  
-  result3[1] = sum2;
-  result3[3] = ('The product of ' + a + ' and ' + b +' and ' + c +' is ' + sum2 + '.');
-  console.log(result3);
-  return result3;
-}
+
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
