@@ -14,6 +14,7 @@ function sum(a, b) { //eslint-disable-line
 
   result[0] = sum1;
   result[1] = ('The sum of ' + a + ' and ' + b + ' is ' + sum1 + '.');
+  // console.log(result);
   return result;
 }
 
@@ -23,10 +24,10 @@ testSum(4, 7);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
-/* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
-"The product of 5 and 9 is 45."
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
+// Problem 2
+// Write a fuiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+// "The product of 5 and 9 is 45."
+// Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 
 // Write your code here
@@ -36,7 +37,9 @@ function multiply(a, b) { //eslint-disable-line
   
   result2[0] = sum1;
   result2[1] = ('The product of ' + a + ' and ' + b + ' is ' + sum1 + '.');
+  // console.log(result2);
   return result2;
+  
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -54,7 +57,18 @@ Test this function by hand in the console to get it working, and when you think 
 // banana
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var result3 = [];
+  var add = sum(a,b);
+  var sum1 = sum(add[0], c);
+  var times = multiply(a,b);
+  var sum2 = multiply(times[0], c); {
+  result3[0] = sum1[0];
+  result3[2] = (`${a} and ${b} and ${c} sum to ${sum1[0]}.`);
+  result3[1] = sum2[0];
+  result3[3] = ('The product of ' + a + ' and ' + b +' and ' + c +' is ' + sum2[0] + '.');
+  
+  return result3;
+  }
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -71,13 +85,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
