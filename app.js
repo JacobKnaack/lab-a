@@ -7,11 +7,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
+  var result = [];
 
+  var sum = a + b;
+
+  result[0] = a + b;
+  result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
+  return result;
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -23,11 +29,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  var result = [];
 
+  var multiply = a * b;
+
+  result[0] = a * b;
+  result[1] = "The product of " + a + " and " + b + " is " + multiply + ".";
+  return result;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -41,11 +53,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  var result = [];
 
+  var add = a + b + c;
+  var multiply = a * b * c;
+
+  result[0] = a + b + c;
+  result[1] = a * b * c;
+  result[2] = a + " and " + b + " and " + c + " sum to " + add + ".";
+  result[3] = "The product of " + a + " and " + b + " and " + c + " is " + multiply + ".";
+  return result;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -60,12 +81,18 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  var testArray = [];
+  
+  var someNumber = sum(sumArr[0],sum(sumArr[1], sumArr[2]) [0])[0]
+  testArray.push(someNumber)
+  var someString = sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + someNumber + ' is their sum.'
+  testArray.push(someString)
+  console.log(testArray)
+  return testArray;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -78,11 +105,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    var testArray = [];
 
+/*
+  var c = multiply(multArr[1], multArr[2])
+  var d = c[0]
+  var e = multiply(d, multArr[0])
+  var f = e[0]
+*/
+
+  var someProduct = multiply(multArr[0], multiply(multArr[1], multArr[2])[0])[0];
+  testArray.push(someProduct)
+  var finalString = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + someProduct + '.'
+  testArray.push(finalString)
+  console.log(testArray)
+  return testArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -91,6 +132,18 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
 /////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 /* STRETCH GOAL: Problem 6
 Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 "The numbers 1,2,3,4,5 have a product of 120."
