@@ -11,7 +11,8 @@ function sum(a, b) { //eslint-disable-line
     var sum = a + b;
     sumArray[0] = sum;
     sumArray[1] = ("The sum of " + a +" and " + b + " is " + sum + "." )
-    return sumArray;
+    
+    return sum;
 
 }
 
@@ -32,7 +33,8 @@ function multiply(a, b) { //eslint-disable-line
     var product = a * b;
     productArray[0] = product;
     productArray[1] = ("The product of " + a +" and " + b + " is " + product + "." )
-    return productArray;
+    return product;
+    
 
 
 }
@@ -81,12 +83,20 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    var solution = [];
+    var sum1 = 0;
+    for(var i=0; i<sumArr.length; i++){
+        sum1 = sum(sumArr[i],sum1);
 }
+    solution[0] = sum1;
+    solution[1] = (sumArr[0] + "," + sumArr[1] + "," + sumArr[2] + " was passed in as an array of numbers, and " + sum1 + " is their sum.");
+    console.log(solution);
+    return solution;        
+} 
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
