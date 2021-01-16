@@ -105,11 +105,25 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    var testArray = [];
 
+/*
+  var c = multiply(multArr[1], multArr[2])
+  var d = c[0]
+  var e = multiply(d, multArr[0])
+  var f = e[0]
+*/
+
+  var someProduct = multiply(multArr[0], multiply(multArr[1], multArr[2])[0])[0];
+  testArray.push(someProduct)
+  var finalString = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + someProduct + '.'
+  testArray.push(finalString)
+  console.log(testArray)
+  return testArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -118,6 +132,18 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
 /////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 /* STRETCH GOAL: Problem 6
 Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 "The numbers 1,2,3,4,5 have a product of 120."
