@@ -6,6 +6,7 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+
 function sum(a, b) { //eslint-disable-line
     var sumArray = [];
     var sum = a + b;
@@ -62,9 +63,6 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     sumAndMultiplyArray[2] = (a + " and " + b + " and " + c + " sum to " + sum + ".");
     sumAndMultiplyArray[3] = ("The product of " + a + " and " + b + " and " + c + " is " + product + ".");
     return sumAndMultiplyArray;
-
-
-
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -109,11 +107,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var solution2 = [];
+    var product1 = 1;
+    for ( var i=0; i < multArr.length; i++){
+        product1 = multiply(multArr[i], product1);
+    }
+    solution2[0] = (product1);
+    solution2[1] = ("The numbers " + multArr[0] + "," + multArr[1] + "," + multArr[2] + " have a product of " + product1 + ".")
+    console.log(solution2);
+    return solution2;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
