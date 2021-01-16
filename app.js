@@ -7,11 +7,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
+    var sumArray = [];
+    var sum = a + b;
+    sumArray[0] = sum;
+    sumArray[1] = ("The sum of " + a +" and " + b + " is " + sum + "." )
+    
+    return sum;
 
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+ testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -23,11 +29,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+    var productArray = [];
+    var product = a * b;
+    productArray[0] = product;
+    productArray[1] = ("The product of " + a +" and " + b + " is " + product + "." )
+    return product;
+    
+
 
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -41,11 +54,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var sumAndMultiplyArray = [];
+    var sum = a + b + c;
+    var product = a * b * c;
+    sumAndMultiplyArray[0] = sum;
+    sumAndMultiplyArray[1] = product;
+    sumAndMultiplyArray[2] = (a + " and " + b + " and " + c + " sum to " + sum + ".");
+    sumAndMultiplyArray[3] = ("The product of " + a + " and " + b + " and " + c + " is " + product + ".");
+    return sumAndMultiplyArray;
+
+
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -60,12 +83,20 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    var solution = [];
+    var sum1 = 0;
+    for(var i=0; i<sumArr.length; i++){
+        sum1 = sum(sumArr[i],sum1);
 }
+    solution[0] = sum1;
+    solution[1] = (sumArr[0] + "," + sumArr[1] + "," + sumArr[2] + " was passed in as an array of numbers, and " + sum1 + " is their sum.");
+    console.log(solution);
+    return solution;        
+} 
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
