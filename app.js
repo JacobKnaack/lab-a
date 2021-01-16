@@ -33,7 +33,7 @@ function multiply(a, b) { //eslint-disable-line
   var product = a * b;
   resultMultiply[0] = product;
   resultMultiply[1] = "The product of " + a + " and " + b + " is " + product + ".";
-  return resultMultiply;
+  return product;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -75,17 +75,6 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-function sum(a, b) { //eslint-disable-line
-  var result = [];
-
-  var sum = a + b;
-  console.log(sum)
-  result[0] = sum;
-  result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
-  return sum;
-}
-
-
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
@@ -116,11 +105,18 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var solutionTwoArray = [];
+  var arrayProduct = 1
+  for (var a = 0; a < multArr.length; a++){
+    arrayProduct = multiply(multArr[a], arrayProduct);
+  }
+  solutionTwoArray [0] = arrayProduct;
+  solutionTwoArray [1] = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of 24.'
+  return solutionTwoArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
