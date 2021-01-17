@@ -85,7 +85,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-
+function sumArray(sumArr) { //eslint-disable-line
+  var result4 = [];
+  var add1 = sum(testArray[0], testArray[1]);
+  var add2 = sum(add1[0], testArray[2]);
+  var string1 = "2,3,4 was passed in as an array of numbers, and 9 is their sum.";
+  testArray.unshift(add2[0]);
+  result4[0] = add2[0];
+  result4[1] = string1;
+  console.log(testArray);
+  console.log(string1);
+  
+  return result4;
+ 
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -102,6 +114,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) { //eslint-disable-line
 
 }
