@@ -67,6 +67,8 @@ result[3] = "The product of " + a + " and " + b + " and " + c + " is " + multipl
 return result;
 }
 
+
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
