@@ -12,11 +12,12 @@ function sum(a, b) { //eslint-disable-line
   var sum = a + b;
 
   result[0] = a + b;
-  result[1] = ""
+  result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
+  return result;
 }
 
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
