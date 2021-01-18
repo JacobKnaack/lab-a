@@ -29,6 +29,12 @@ function multiply(a, b) { //eslint-disable-line
 
 }
 
+// function sumMult(x,y){
+//   var sum = x * y;
+//   for (var i = 0; i < x.length; i++)
+//   console.log(5[i] * 9)
+// }
+
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -43,10 +49,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+sumAndMultiply([4,7], 5)
+function sumAndMultiply ([4,7], 5) { //eslint-disable-line
+  for (var i = 0; i < sumAndMultiply.length; i++) {
+    console.log(sumAndMultiply[i] = 5)
+  }
 }
-
+sumthisup([4,7] * 5)
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
@@ -102,7 +111,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
