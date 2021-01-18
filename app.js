@@ -25,15 +25,16 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+// function multiply(a, b) { //eslint-disable-line
 
-}
-
-// function sumMult(x,y){
-//   var sum = x * y;
-//   for (var i = 0; i < x.length; i++)
-//   console.log(5[i] * 9)
 // }
+
+function sumMult(x,y){
+  var sum = x * y;
+  for (var i = 0; i < x.length; i++)
+  console.log(5[i] * 9)
+}
+sumMult(5 * 9)
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -49,13 +50,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-sumAndMultiply([4,7], 5)
-function sumAndMultiply ([4,7], 5) { //eslint-disable-line
-  for (var i = 0; i < sumAndMultiply.length; i++) {
-    console.log(sumAndMultiply[i] = 5)
-  }
-}
-sumthisup([4,7] * 5)
+// sumAndMultiply([4,7], 5)
+// function sumAndMultiply ([4,7], 5) { //eslint-disable-line
+//   for (var i = 0; i < sumAndMultiply.length; i++) {
+//     console.log(sumAndMultiply[i] = 5)
+//   }
+// }
+// sumthisup([4,7] * 5)
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
