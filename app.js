@@ -6,12 +6,12 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(x, y) {
-  for (var i = 0; i < sum.length; i++){
-    console.log(4[i] + 7)
-  }
+// function sum(x, y) {
+//   for (var i = 0; i < x.length; i++){
+//     console.log(4[i] + 7)
+//   }
 
-}
+// }
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
