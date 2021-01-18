@@ -8,8 +8,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   let answer = a + b
-  let array = [answer, ('The sum of ' + a + ' and ' + b + ' is ' + answer + '.')]  
-  return array
+  return [answer, ('The sum of ' + a + ' and ' + b + ' is ' + answer + '.')]  
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -68,12 +67,16 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let a = testArray[0]
+  let b = testArray[1]
+  let c = testArray[2]
+  let arraySum = sum(sum(a, b)[0], c)[0]
+  return [arraySum, (a + ',' + b + ',' + c + ' was passed in as an array of numbers, and ' + arraySum  + ' is their sum.')]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
