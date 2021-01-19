@@ -37,10 +37,9 @@ function multiply(a,b) {
   result[1] = "The product of " + a + ' and ' + b + ' is '  + product +  '.';
   return result;
 }
-// testMultiply(5,9);
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -64,7 +63,7 @@ function sumAndMultiply(a,b, c) {
   return [sum2[0], product2[0], `${a} and ${b} and ${c} sum to ${sum2[0]}.`, `The product of ${a} and ${b} and ${c} is ${product2[0]}.`];
   
 } 
-// testSumAndMultiply (4,5,7);
+testSumAndMultiply (4,5,7);
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -90,7 +89,7 @@ function sumArray(sumArr) {
   return result;
 }
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -102,27 +101,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-var testArrayMult = [2, 3, 4];
+// var testArrayMult = [2, 3, 4];
 
 function multiplyArray(multArr) { //eslint-disable-line
   var result = [];
-  var sum01 = sum(multArr[0], multArr[1]);
-  var sumAll = sum(sum01[0], multArr[2]);
+  var sum01 = multiply(multArr[0], multArr[1]);
+  var sumAll = multiply(sum01[0], multArr[2]);
  
   result[0] = sumAll[0];
-  result[1] = multArr[0] +  "," + multArr[1] + "," + multArr[2] + " have a product of, and " + result[0] + " is their product."
-
+  // "The numbers 2,3,4 have a product of 24."
+  result[1] = "The numbers " + multArr[0] +  "," + multArr[1] + "," + multArr[2] + " have a product of " + result[0] + ".";
+  console.log(result)
+  return result;
 }
-// function multiply(a,b) {
-//   var result = [];
-//   var product = a * b;
-//   result[0] = product ;
-//   result[1] = "The product of " + a + ' and ' + b + ' is '  + product +  '.';
-//   return result;
-// }
-// testMultiply(5,9);
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
