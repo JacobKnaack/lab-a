@@ -31,12 +31,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // }
 
-function multiply(x, y) {
+function multiply(a,b) {
   var result = [];
-  var prompt = x * y;
-  
-  result[0] = x * y;
-  result[1] = "The product of " + x + " and " + y + " is " + multiply + ".";
+  var product = a * b;
+  result[0] = product ;
+  result[1] = "The product of " + a + ' and ' + b + ' is '  + product +  '.';
   return result;
 }
 
