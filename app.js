@@ -36,7 +36,7 @@ function multiply(x, y) {
   var prompt = x * y;
   
   result[0] = x * y;
-  result[1] = "The product of " + x + " and " + b + " is " + multiply + ".";
+  result[1] = "The product of " + x + " and " + y + " is " + multiply + ".";
   return result;
 }
 
