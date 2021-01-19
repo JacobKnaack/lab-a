@@ -6,11 +6,13 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(x, y) {
-  for (var i = 0; i < sum.length; i++){
-    console.log(4[i] + 7)
-  }
+function sum(a, b) {
+  var result = [];
+  var sum = a + b;
 
+  result[0] = a + b;
+  result[1] = "The sum of " + a + " and " + b + " is " + sum + ".";
+  return result;
 }
 
 // Here is the test for sum(); uncomment it to run it
