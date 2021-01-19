@@ -15,9 +15,8 @@ function sum(a, b) {
 
 }
 
-// Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
-
+// Here is the test for sum(); uncomment it to run it
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -38,9 +37,8 @@ function multiply(a,b) {
   return result;
 }
 
-// Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
-
+// Here is the test for multiply(); uncomment it to run it
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -115,9 +113,8 @@ function multiplyArray(multArr) { //eslint-disable-line
   return result;
 }
 
-// Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray();
-
+// Here is the test for multiplyArray(); uncomment it to run it
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
